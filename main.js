@@ -9,7 +9,6 @@
     the sum of the prices
 */
 const addAndReturnSum = () => {
-
 }
 
 /*
