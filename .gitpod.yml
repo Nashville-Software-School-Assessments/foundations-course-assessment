@@ -1,11 +1,10 @@
+ports:
+  - port: 8088
+    onOpen: open-browser
 tasks:
   - before: echo 'Setting up your development environment'
     init: npm install
     command: npm run develop
   - name: Autotesting
-    init: sh ./scripts/seed-database.sh
     command: npm test
     openMode: split-right
-ports:
-  - port: 8088
-    onOpen: open-browser
