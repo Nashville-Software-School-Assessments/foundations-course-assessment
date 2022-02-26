@@ -4,7 +4,7 @@ ports:
 tasks:
   - before: echo 'Setting up your development environment'
     init: npm install
-    command: npm run develop
+    command: cd ./src && echo '\n\n\n Run the following command... \n\n\t\tserve -l 8088'
   - name: Autotesting
     init: npm install
     command: npm test
