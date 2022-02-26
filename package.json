@@ -1,14 +1,15 @@
 {
-  "name": "foundations-assessment",
+  "name": "assessment-template",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "develop": "serve -l 8088"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Nashville-Software-School-Assessments/foundations-course-assessment.git"
+    "url": "git+https://github.com/Nashville-Software-School-Assessments/foundations-course-assessment.git"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,10 @@
   "homepage": "https://github.com/Nashville-Software-School-Assessments/foundations-course-assessment#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "jest": "^27.4.5"
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "babel-jest": "^25.3.0",
+    "jest": "^27.4.5",
+    "serve": "^13.0.2"
   }
 }
