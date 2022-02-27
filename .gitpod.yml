@@ -4,7 +4,7 @@ ports:
 tasks:
   - before: echo 'Setting up your development environment'
     init: npm install
-    command: echo -e '\n\n\n\n\nStarting the web server....\n\n\n\n\n' && npm run develop
+    command: echo -e '\n\n\n\n\n\n\n\nStarting the web server....\n' && npm run develop
   - name: Autotesting
     init: npm install
     command: npm test

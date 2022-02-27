@@ -7,6 +7,17 @@
     "test": "jest --watchAll --verbose",
     "develop": "serve -l 8088 src"
   },
+  "jest": {
+    "reporters": [
+      "default",
+      ["jest-html-reporters", {
+        "publicPath": "./html-report",
+        "filename": "report.html",
+        "openReport": false
+      }]
+    ],
+    "watchPathIgnorePatterns": ["html-report"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nashville-Software-School-Assessments/foundations-course-assessment.git"
@@ -23,6 +34,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "babel-jest": "^25.3.0",
     "jest": "^27.4.5",
+    "jest-html-reporters": "^3.0.5",
     "serve": "^13.0.2"
   }
 }
